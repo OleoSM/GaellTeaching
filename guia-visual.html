@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaell English Academy - Guía Rápida del Plan de Estudios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #2563eb;
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .category {
+            margin-bottom: 3rem;
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .category-header.intermediate {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+        }
+        
+        .category-title {
+            font-size: 2rem;
+        }
+        
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .level-card {
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #2563eb;
+        }
+        
+        .level-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .level-icon {
+            font-size: 2.5rem;
+        }
+        
+        .level-info h3 {
+            color: #2563eb;
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .level-points {
+            display: inline-block;
+            background: #fbbf24;
+            color: #78350f;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        
+        .level-description {
+            color: #4b5563;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .topics {
+            margin-bottom: 1rem;
+        }
+        
+        .topics-label {
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .topic-tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .vocab-count {
+            background: #d1fae5;
+            color: #065f46;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .cta-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #2563eb;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Gaell English Academy</h1>
+        <p class="subtitle">Plan de Estudios Completo - Basado en CENLEX IPN</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Niveles Totales</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">120</div>
+                <div class="stat-label">Palabras Base</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">550</div>
+                <div class="stat-label">Puntos a Completar</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">∞</div>
+                <div class="stat-label">Personalizable</div>
+            </div>
+        </div>
+        
+        <!-- BASIC LEVELS -->
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🌱</span>
+                <div>
+                    <div class="category-title">Niveles Básicos (1-6)</div>
+                    <div>Fundamentos del inglés - De cero a conversaciones básicas</div>
+                </div>
+            </div>
+            
+            <div class="levels-grid">
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🌱</span>
+                        <div class="level-info">
+                            <h3>Level 1: Hello World</h3>
+                            <span class="level-points">🔓 0 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Greetings, alphabet, and basic introductions</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Alphabet</span>
+                        <span class="topic-tag">Greetings</span>
+                        <span class="topic-tag">Personal Info</span>
+                        <span class="topic-tag">Numbers 1-20</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 palabras esenciales</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🏠</span>
+                        <div class="level-info">
+                            <h3>Level 2: My World</h3>
+                            <span class="level-points">🔒 50 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Family, colors, classroom objects</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Family Members</span>
+                        <span class="topic-tag">Colors</span>
+                        <span class="topic-tag">School Objects</span>
+                        <span class="topic-tag">Numbers 20-100</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 palabras + familia y colores</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🌞</span>
+                        <div class="level-info">
+                            <h3>Level 3: Daily Life</h3>
+                            <span class="level-points">🔒 100 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Daily routines, time, and simple verbs</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Daily Activities</span>
+                        <span class="topic-tag">Time Expressions</span>
+                        <span class="topic-tag">Simple Present</span>
+                        <span class="topic-tag">Days of Week</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 verbos de rutina diaria</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🏙️</span>
+                        <div class="level-info">
+                            <h3>Level 4: Around Town</h3>
+                            <span class="level-points">🔒 150 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Places, directions, and transportation</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Places in City</span>
+                        <span class="topic-tag">Directions</span>
+                        <span class="topic-tag">Transportation</span>
+                        <span class="topic-tag">Prepositions</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 lugares y direcciones</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🍎</span>
+                        <div class="level-info">
+                            <h3>Level 5: Food & Shopping</h3>
+                            <span class="level-points">🔒 200 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Food items, shopping, and quantities</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Food Items</span>
+                        <span class="topic-tag">Shopping Phrases</span>
+                        <span class="topic-tag">Quantities</span>
+                        <span class="topic-tag">Likes/Dislikes</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 alimentos y compras</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">💬</span>
+                        <div class="level-info">
+                            <h3>Level 6: Express Yourself</h3>
+                            <span class="level-points">🔒 250 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Feelings, weather, and basic descriptions</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Emotions</span>
+                        <span class="topic-tag">Weather</span>
+                        <span class="topic-tag">Adjectives</span>
+                        <span class="topic-tag">Simple Questions</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 emociones y descripciones</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- INTERMEDIATE LEVELS -->
+        <div class="category">
+            <div class="category-header intermediate">
+                <span class="category-icon">🌿</span>
+                <div>
+                    <div class="category-title">Niveles Intermedios (7-12)</div>
+                    <div>Gramática avanzada y conversaciones fluidas</div>
+                </div>
+            </div>
+            
+            <div class="levels-grid">
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">📖</span>
+                        <div class="level-info">
+                            <h3>Level 7: Past Stories</h3>
+                            <span class="level-points">🔒 300 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Simple past tense and storytelling</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Past Simple</span>
+                        <span class="topic-tag">Time Markers</span>
+                        <span class="topic-tag">Regular/Irregular Verbs</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 verbos en pasado</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🔮</span>
+                        <div class="level-info">
+                            <h3>Level 8: Future Plans</h3>
+                            <span class="level-points">🔒 350 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Future tenses and making plans</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Will/Going to</span>
+                        <span class="topic-tag">Future Plans</span>
+                        <span class="topic-tag">Predictions</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 expresiones futuras</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">⚖️</span>
+                        <div class="level-info">
+                            <h3>Level 9: Comparisons</h3>
+                            <span class="level-points">🔒 400 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Comparatives and superlatives</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Comparative Forms</span>
+                        <span class="topic-tag">Superlatives</span>
+                        <span class="topic-tag">As...as</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 comparativos</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🌍</span>
+                        <div class="level-info">
+                            <h3>Level 10: Experience</h3>
+                            <span class="level-points">🔒 450 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Present perfect and life experiences</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Present Perfect</span>
+                        <span class="topic-tag">Ever/Never</span>
+                        <span class="topic-tag">Life Experiences</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 experiencias de vida</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🤔</span>
+                        <div class="level-info">
+                            <h3>Level 11: Conditions</h3>
+                            <span class="level-points">🔒 500 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Conditional sentences and hypotheticals</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">First Conditional</span>
+                        <span class="topic-tag">Second Conditional</span>
+                        <span class="topic-tag">Possibilities</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 condicionales</div>
+                </div>
+                
+                <div class="level-card">
+                    <div class="level-header">
+                        <span class="level-icon">🌉</span>
+                        <div class="level-info">
+                            <h3>Level 12: Fluency Bridge</h3>
+                            <span class="level-points">🔒 550 puntos</span>
+                        </div>
+                    </div>
+                    <p class="level-description">Complex structures and advanced expressions</p>
+                    <div class="topics">
+                        <span class="topics-label">📚 Temas:</span>
+                        <span class="topic-tag">Phrasal Verbs</span>
+                        <span class="topic-tag">Idioms</span>
+                        <span class="topic-tag">Conversation Skills</span>
+                    </div>
+                    <div class="vocab-count">✨ 10 expresiones avanzadas</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>🎉 ¡Comienza Tu Aventura de Aprendizaje!</h2>
+            <p style="margin-bottom: 1.5rem;">120 palabras base + contenido personalizado ilimitado = Tu camino hacia la fluidez</p>
+            <a href="index.html" class="cta-button">🎓 Abrir Gaell English Academy</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaell English Academy - Tu plataforma de aprendizaje de inglés gamificada">
+    <title>Gaell English Academy - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Gaell English Academy</span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Dashboard</a>
+                <a href="grammar-guide.html" class="nav-link">📚 Guía de Gramática</a>
+                <a href="#" id="progressBtn" class="nav-link">Mi Progreso</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - User Stats -->
+    <section class="hero dashboard-hero">
+        <div class="container">
+            <h1 class="hero-title">Tu Progreso en Gaell English Academy</h1>
+            <p class="hero-subtitle">Continúa tu aventura de aprendizaje</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="userLevel">1</span>
+                        <span class="stat-label">Nivel Actual</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">⭐</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="totalPoints">0</span>
+                        <span class="stat-label">Puntos</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🏆</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="badgeCount">0</span>
+                        <span class="stat-label">Insignias</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🔥</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="streakCount">0</span>
+                        <span class="stat-label">Días Seguidos</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">📚</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="wordsLearned">0</span>
+                        <span class="stat-label">Palabras Aprendidas</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">✓</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="correctAnswers">0</span>
+                        <span class="stat-label">Respuestas Correctas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grammar Guide Highlight Section -->
+    <section class="grammar-highlight" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem 0; margin: 2rem 0;">
+        <div class="container" style="text-align: center; color: white;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">📚 Nueva Guía Completa de Gramática</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">
+                Domina los temas más difíciles del inglés con fórmulas, mnemotecnias y trucos probados
+            </p>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">⏰</div>
+                    <div style="font-weight: 600;">Tiempos Verbales</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔀</div>
+                    <div style="font-weight: 600;">Condicionales</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎭</div>
+                    <div style="font-weight: 600;">Verbos Modales</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; backdrop-filter: blur(10px);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</div>
+                    <div style="font-weight: 600;">Phrasal Verbs</div>
+                </div>
+            </div>
+            <a href="grammar-guide.html" style="display: inline-block; padding: 1rem 2rem; background: white; color: #667eea; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: transform 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                ✨ Explorar Guía de Gramática
+            </a>
+        </div>
+    </section>
+
+    <!-- Learning Path Section -->
+    <section class="learning-path" id="learningPath">
+        <div class="container">
+            <h2 class="section-title">Tu Ruta de Aprendizaje</h2>
+            <p class="section-subtitle">Selecciona un nivel para comenzar a aprender</p>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="basic">
+                    <span class="tab-icon">🌱</span>
+                    <span>Básico (1-6)</span>
+                </button>
+                <button class="category-tab" data-category="intermediate">
+                    <span class="tab-icon">🚀</span>
+                    <span>Intermedio (7-12)</span>
+                </button>
+            </div>
+
+            <!-- Levels Grid -->
+            <div class="levels-grid" id="levelsGrid">
+                <!-- Levels will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Tus Logros</h2>
+            <p class="section-subtitle">Desbloquea insignias completando desafíos</p>
+
+            <div class="badges-grid" id="badgesGrid">
+                <div class="badge-item locked">
+                    <span class="badge-icon">🏆</span>
+                    <span class="badge-name">Primeros Pasos</span>
+                    <span class="badge-requirement">Aprende 1 palabra</span>
+                </div>
+                <div class="badge-item locked">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-name">Aprendiz Rápido</span>
+                    <span class="badge-requirement">Aprende 10 palabras</span>
+                </div>
+                <div class="badge-item locked">
+                    <span class="badge-icon">🎨</span>
+                    <span class="badge-name">Creador</span>
+                    <span class="badge-requirement">Crea 5 tarjetas</span>
+                </div>
+                <div class="badge-item locked">
+                    <span class="badge-icon">💯</span>
+                    <span class="badge-name">Perfeccionista</span>
+                    <span class="badge-requirement">20 respuestas correctas</span>
+                </div>
+                <div class="badge-item locked">
+                    <span class="badge-icon">🔥</span>
+                    <span class="badge-name">En Racha</span>
+                    <span class="badge-requirement">7 días seguidos</span>
+                </div>
+                <div class="badge-item locked">
+                    <span class="badge-icon">🌟</span>
+                    <span class="badge-name">Estrella Ascendente</span>
+                    <span class="badge-requirement">Alcanza 50 puntos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Modal -->
+    <div class="modal" id="progressModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Estadísticas Detalladas</h2>
+                <button class="btn-close" id="closeModal" aria-label="Cerrar modal">×</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <span class="dashboard-icon">🔥</span>
+                        <h3 class="dashboard-value" id="dashboardStreak">0</h3>
+                        <p class="dashboard-label">Días Seguidos</p>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <span class="dashboard-icon">⭐</span>
+                        <h3 class="dashboard-value" id="dashboardPoints">0</h3>
+                        <p class="dashboard-label">Puntos Totales</p>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <span class="dashboard-icon">🎯</span>
+                        <h3 class="dashboard-value" id="dashboardLevel">1</h3>
+                        <p class="dashboard-label">Nivel Actual</p>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <span class="dashboard-icon">📚</span>
+                        <h3 class="dashboard-value" id="dashboardWords">0</h3>
+                        <p class="dashboard-label">Palabras Aprendidas</p>
+                    </div>
+                </div>
+
+                <div class="progress-details">
+                    <h3>Tu Progreso por Categoría</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-label">
+                            <span>Básico</span>
+                            <span id="basicProgress">0/6</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="basicProgressBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-label">
+                            <span>Intermedio</span>
+                            <span id="intermediateProgress">0/6</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="intermediateProgressBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Gaell English Academy - Plataforma de Aprendizaje de Inglés</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="curriculum.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

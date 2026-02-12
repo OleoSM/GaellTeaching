@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaell English Academy - Nivel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Gaell English Academy</span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="grammar-guide.html" class="nav-link">📚 Gramática</a>
+                <button id="levelMenuBtn" class="nav-link">Niveles</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Level Header -->
+    <section class="level-hero" id="levelHero">
+        <div class="container">
+            <button class="btn-back" id="backBtn">
+                <span class="icon">←</span> Volver al Dashboard
+            </button>
+            
+            <div class="level-header-content">
+                <span class="level-icon-large" id="levelIcon">🌱</span>
+                <div class="level-info">
+                    <h1 class="level-name" id="levelName">Cargando...</h1>
+                    <p class="level-desc" id="levelDesc">Descripción del nivel</p>
+                </div>
+            </div>
+
+            <div class="level-progress-bar">
+                <div class="progress-info">
+                    <span>Progreso del Módulo</span>
+                    <span id="levelProgressText">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="levelProgressFill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Content Section -->
+    <section class="learning-content" id="learningContent">
+        <div class="container">
+            <div class="content-header">
+                <span class="content-icon">📖</span>
+                <h2 class="section-title">Contenido del Módulo</h2>
+            </div>
+
+            <!-- Lesson Introduction -->
+            <div class="lesson-card" id="lessonIntro">
+                <div class="lesson-number">
+                    <span class="number-icon">1</span>
+                </div>
+                <div class="lesson-content">
+                    <h3 class="lesson-title">Introducción al Tema</h3>
+                    <div class="lesson-body" id="lessonBody">
+                        <!-- Content will be dynamically loaded -->
+                    </div>
+                    <button class="btn-primary" id="startLearningBtn">
+                        <span class="icon">▶</span> Comenzar a Aprender
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vocabulary Section -->
+            <div class="lesson-card" id="vocabularySection" style="display:none;">
+                <div class="lesson-number">
+                    <span class="number-icon">2</span>
+                </div>
+                <div class="lesson-content">
+                    <h3 class="lesson-title">Vocabulario Clave</h3>
+                    <div class="vocabulary-grid" id="vocabularyGrid">
+                        <!-- Vocabulary cards will be loaded here -->
+                    </div>
+                    <button class="btn-primary" id="practiceVocabBtn">
+                        <span class="icon">🎴</span> Practicar con Flashcards
+                    </button>
+                </div>
+            </div>
+
+            <!-- Flashcards Practice -->
+            <div class="lesson-card" id="flashcardsSection" style="display:none;">
+                <div class="lesson-number">
+                    <span class="number-icon">3</span>
+                </div>
+                <div class="lesson-content">
+                    <h3 class="lesson-title">Práctica con Tarjetas</h3>
+                    
+                    <div class="flashcard-container">
+                        <div class="session-stats">
+                            <div class="stat-badge correct">
+                                <span class="stat-icon">✓</span>
+                                <span id="correctCount">0</span>
+                            </div>
+                            <div class="stat-badge incorrect">
+                                <span class="stat-icon">✗</span>
+                                <span id="incorrectCount">0</span>
+                            </div>
+                        </div>
+
+                        <div class="flashcard" id="flashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">
+                                    <p class="card-word" id="cardWord">Word</p>
+                                </div>
+                                <div class="flashcard-back">
+                                    <p class="card-meaning" id="cardMeaning">Meaning</p>
+                                    <p class="card-example" id="cardExample">Example sentence</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feedback-overlay" id="feedbackOverlay">
+                            <div class="feedback-icon" id="feedbackIcon">✓</div>
+                        </div>
+
+                        <div class="flashcard-controls">
+                            <button class="btn-secondary" id="wrongBtn">✗ No la sé</button>
+                            <button class="btn-secondary" id="skipBtn">→ Siguiente</button>
+                            <button class="btn-primary" id="correctBtn">✓ La sé bien</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="toGamesBtn" style="margin-top: 2rem;">
+                        <span class="icon">🎮</span> Ir a Actividades Interactivas
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Games Section -->
+            <div class="lesson-card" id="gamesSection" style="display:none;">
+                <div class="lesson-number">
+                    <span class="number-icon">4</span>
+                </div>
+                <div class="lesson-content">
+                    <h3 class="lesson-title">Actividades Interactivas</h3>
+                    <p class="lesson-subtitle">Elige un juego para practicar lo aprendido</p>
+
+                    <!-- Game Selector -->
+                    <div class="game-selector">
+                        <button class="game-card" data-game="fillblanks">
+                            <span class="game-icon">📝</span>
+                            <h4>Completa el Espacio</h4>
+                            <p>Completa oraciones</p>
+                        </button>
+
+                        <button class="game-card" data-game="scramble">
+                            <span class="game-icon">🔤</span>
+                            <h4>Descifra la Palabra</h4>
+                            <p>Ordena las letras</p>
+                        </button>
+
+                        <button class="game-card" data-game="quiz">
+                            <span class="game-icon">❓</span>
+                            <h4>Quiz</h4>
+                            <p>Opción múltiple</p>
+                        </button>
+
+                        <button class="game-card" data-game="typing">
+                            <span class="game-icon">⌨️</span>
+                            <h4>Practica Escritura</h4>
+                            <p>Mejora tu velocidad</p>
+                        </button>
+
+                        <button class="game-card" data-game="builder">
+                            <span class="game-icon">🏗️</span>
+                            <h4>Construye Oraciones</h4>
+                            <p>Ordena las palabras</p>
+                        </button>
+
+                        <button class="game-card" data-game="matching">
+                            <span class="game-icon">🎯</span>
+                            <h4>Emparejar</h4>
+                            <p>Arrastra y suelta</p>
+                        </button>
+                    </div>
+
+                    <!-- Game Containers -->
+                    <div id="fillBlanksContainer" class="game-play-area" style="display:none;"></div>
+                    <div id="scrambleContainer" class="game-play-area" style="display:none;"></div>
+                    <div id="quizContainer" class="game-play-area" style="display:none;"></div>
+                    <div id="typingContainer" class="game-play-area" style="display:none;"></div>
+                    <div id="sentenceBuilderContainer" class="game-play-area" style="display:none;"></div>
+                    <div id="matchingContainer" class="game-play-area" style="display:none;">
+                        <div class="game-container">
+                            <div class="game-score">
+                                <span class="timer" id="gameTimer">⏱️ 60s</span>
+                                <span class="game-points" id="gamePoints">Score: 0</span>
+                            </div>
+
+                            <div class="game-board">
+                                <div class="words-column">
+                                    <h3 class="column-title">Palabras</h3>
+                                    <div class="draggable-items" id="draggableWords"></div>
+                                </div>
+
+                                <div class="definitions-column">
+                                    <h3 class="column-title">Definiciones</h3>
+                                    <div class="drop-zones" id="dropZones"></div>
+                                </div>
+                            </div>
+
+                            <button class="btn-primary" id="startGameBtn">
+                                <span class="icon">🎮</span> Iniciar Desafío
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="completeLevelBtn" style="margin-top: 2rem;">
+                        <span class="icon">✓</span> Completar Nivel
+                    </button>
+                </div>
+            </div>
+
+            <!-- Level Complete Modal -->
+            <div class="completion-modal" id="completionModal" style="display:none;">
+                <div class="modal-overlay"></div>
+                <div class="completion-content">
+                    <span class="completion-icon">🎉</span>
+                    <h2>¡Nivel Completado!</h2>
+                    <p>Has terminado este módulo exitosamente</p>
+                    <div class="completion-stats">
+                        <div class="completion-stat">
+                            <span class="icon">⭐</span>
+                            <span id="pointsEarned">0</span>
+                            <span class="label">Puntos Ganados</span>
+                        </div>
+                        <div class="completion-stat">
+                            <span class="icon">📚</span>
+                            <span id="wordsCount">0</span>
+                            <span class="label">Palabras Aprendidas</span>
+                        </div>
+                    </div>
+                    <div class="completion-actions">
+                        <button class="btn-secondary" id="backToDashboardBtn">Volver al Dashboard</button>
+                        <button class="btn-primary" id="nextLevelBtn">Siguiente Nivel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="curriculum.js"></script>
+    <script src="level-content.js"></script>
+    <script src="advanced-games.js"></script>
+    <script src="level-view.js"></script>
+</body>
+</html>

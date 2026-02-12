@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Gaell English Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .welcome-container {
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 800px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            text-align: center;
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2563eb;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            text-align: center;
+            color: #666;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .features {
+            background: #f9fafb;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .feature-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-text strong {
+            color: #2563eb;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 3px solid transparent;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #2563eb;
+            border-color: #2563eb;
+        }
+        
+        .btn-secondary:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .btn-icon {
+            font-size: 2rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+        
+        .info-box {
+            background: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .info-box strong {
+            color: #92400e;
+        }
+        
+        @media (max-width: 640px) {
+            .buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="logo">🎓</div>
+        <h1>¡Bienvenido a Gaell English Academy!</h1>
+        <p class="tagline">Tu aventura de aprendizaje del inglés comienza aquí</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-value">12</span>
+                <span class="stat-label">Niveles</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">120</span>
+                <span class="stat-label">Palabras</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">∞</span>
+                <span class="stat-label">Personalizable</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Costo</span>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-item">
+                <span class="feature-icon">🎮</span>
+                <div class="feature-text">
+                    <strong>Gamificación Sin Presión</strong>
+                    Gana puntos, desbloquea niveles y obtén insignias a tu propio ritmo
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <span class="feature-icon">📚</span>
+                <div class="feature-text">
+                    <strong>Plan CENLEX-Inspired</strong>
+                    12 niveles progresivos basados en la metodología del IPN
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <span class="feature-icon">🎯</span>
+                <div class="feature-text">
+                    <strong>Flashcards Interactivas</strong>
+                    Tarjetas 3D con feedback visual instantáneo
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <span class="feature-icon">🎨</span>
+                <div class="feature-text">
+                    <strong>Crea Tu Contenido</strong>
+                    Añade vocabulario personalizado según tus intereses
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <span class="feature-icon">🏆</span>
+                <div class="feature-text">
+                    <strong>Mini-Juegos Divertidos</strong>
+                    Drag & drop y más actividades para reforzar
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <span class="feature-icon">💾</span>
+                <div class="feature-text">
+                    <strong>Guardado Automático</strong>
+                    Tu progreso se guarda localmente, sin necesidad de cuenta
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <strong>💡 Tip:</strong> Dedica 15-20 minutos diarios para mejores resultados. 
+            La consistencia es más importante que la velocidad. ¡Disfruta el proceso!
+        </div>
+        
+        <div class="buttons">
+            <a href="index.html" class="btn btn-primary">
+                <span class="btn-icon">🚀</span>
+                <span>COMENZAR AHORA</span>
+            </a>
+            
+            <a href="guia-visual.html" class="btn btn-secondary">
+                <span class="btn-icon">📖</span>
+                <span>VER PLAN COMPLETO</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía Completa de Gramática Inglesa - Fórmulas, Mnemotecnias y Trucos - Gaell English Academy">
+    <title>Gaell English Academy - Guía de Gramática</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Special styles for grammar guide */
+        .grammar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .grammar-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+        }
+
+        .grammar-intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .grammar-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .grammar-nav a {
+            padding: 0.5rem 1rem;
+            background: white;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .grammar-nav a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .grammar-section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .grammar-section h2 {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .grammar-section h3 {
+            font-size: 1.5rem;
+            color: #764ba2;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .formula-box {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .formula-box h4 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .formula {
+            font-family: 'Courier New', monospace;
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            color: #333;
+            border: 2px dashed #667eea;
+            margin: 0.5rem 0;
+        }
+
+        .mnemonic-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .mnemonic-box h4 {
+            color: #f57c00;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tip-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .tip-box h4 {
+            color: #155724;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .warning-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h4 {
+            color: #721c24;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .examples-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .example-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+
+        .example-item .english {
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-item .spanish {
+            color: #666;
+            font-style: italic;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            display: block;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            min-width: 600px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .back-to-dashboard {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-dashboard:hover {
+            background: #764ba2;
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .grammar-intro h1 {
+                font-size: 1.8rem;
+            }
+
+            .grammar-section {
+                padding: 1rem;
+            }
+
+            .grammar-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .grammar-nav {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grammar-container">
+        <a href="index.html" class="back-to-dashboard">← Volver al Dashboard</a>
+
+        <div class="grammar-intro">
+            <h1>🎓 Guía Completa de Gramática Inglesa</h1>
+            <p>Fórmulas, mnemotecnias, trucos y explicaciones detalladas de los temas más difíciles</p>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="grammar-nav">
+            <a href="#present-simple-continuous">Present Simple vs Continuous</a>
+            <a href="#past-tenses">Pasados (Simple, Continuous, Perfect)</a>
+            <a href="#future-forms">Formas del Futuro</a>
+            <a href="#conditionals">Condicionales (0, 1, 2, 3)</a>
+            <a href="#modal-verbs">Verbos Modales</a>
+            <a href="#passive-voice">Voz Pasiva</a>
+            <a href="#reported-speech">Discurso Indirecto</a>
+            <a href="#phrasal-verbs">Phrasal Verbs</a>
+            <a href="#articles">Artículos (a, an, the)</a>
+            <a href="#prepositions">Preposiciones</a>
+        </nav>
+
+        <!-- SECTION 1: PRESENT SIMPLE VS CONTINUOUS -->
+        <section id="present-simple-continuous" class="grammar-section">
+            <h2>📊 Present Simple vs Present Continuous</h2>
+            
+            <h3>🔵 PRESENT SIMPLE (Presente Simple)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULAS</h4>
+                <div class="formula">✅ Afirmativo: Subject + Verb (base) / Verb + s/es (3rd person)</div>
+                <div class="formula">❌ Negativo: Subject + don't/doesn't + Verb (base)</div>
+                <div class="formula">❓ Pregunta: Do/Does + Subject + Verb (base)?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "HARNES"</h4>
+                <p><strong>H</strong>abits (Hábitos)<br>
+                <strong>A</strong>lways true facts (Hechos siempre verdaderos)<br>
+                <strong>R</strong>outines (Rutinas)<br>
+                <strong>N</strong>ever changes (Nunca cambia)<br>
+                <strong>E</strong>very day/week/month (Cada día/semana/mes)<br>
+                <strong>S</strong>chedules (Horarios fijos)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I work every day.</div>
+                    <div class="spanish">Trabajo todos los días. (Rutina)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ The sun rises in the east.</div>
+                    <div class="spanish">El sol sale por el este. (Hecho universal)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ She plays tennis on Mondays.</div>
+                    <div class="spanish">Ella juega tenis los lunes. (Hábito)</div>
+                </div>
+            </div>
+
+            <h3>🟢 PRESENT CONTINUOUS (Presente Continuo)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULAS</h4>
+                <div class="formula">✅ Afirmativo: Subject + am/is/are + Verb-ing</div>
+                <div class="formula">❌ Negativo: Subject + am/is/are + not + Verb-ing</div>
+                <div class="formula">❓ Pregunta: Am/Is/Are + Subject + Verb-ing?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "NOW-PLAN"</h4>
+                <p><strong>NOW</strong> - Happening right now (Sucediendo ahora mismo)<br>
+                <strong>P</strong>rogressing action (Acción en progreso)<br>
+                <strong>L</strong>ook! Listen! (¡Mira! ¡Escucha! - palabras clave)<br>
+                <strong>A</strong>t this moment (En este momento)<br>
+                <strong>N</strong>ear future plans (Planes cercanos confirmados)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I am working right now.</div>
+                    <div class="spanish">Estoy trabajando ahora mismo. (Acción en progreso)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Look! It's raining!</div>
+                    <div class="spanish">¡Mira! ¡Está lloviendo! (Sucede ahora)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ We're meeting tomorrow at 5pm.</div>
+                    <div class="spanish">Nos reunimos mañana a las 5pm. (Plan confirmado)</div>
+                </div>
+            </div>
+
+            <h3>⚖️ COMPARACIÓN DIRECTA</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Situación</th>
+                            <th>Present Simple</th>
+                            <th>Present Continuous</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Rutina diaria</strong></td>
+                            <td>I drink coffee every morning ☕</td>
+                            <td>I'm drinking coffee right now ☕</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trabajo</strong></td>
+                            <td>She works at a bank (empleo permanente)</td>
+                            <td>She's working on a project (tarea temporal)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deportes</strong></td>
+                            <td>He plays football (hábito)</td>
+                            <td>He's playing football (ahora en el campo)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lectura</strong></td>
+                            <td>I read books (hábito general)</td>
+                            <td>I'm reading a book (libro específico ahora)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ VERBOS QUE NO USAN CONTINUOUS (Stative Verbs)</h4>
+                <p><strong>Mnemotecnia: "MENTE-SENTIR-TENER"</strong></p>
+                <ul>
+                    <li><strong>Mente:</strong> know, understand, believe, remember, forget, think (opinión)</li>
+                    <li><strong>Sentir:</strong> love, hate, like, prefer, want, need</li>
+                    <li><strong>Tener/Ser:</strong> have (posesión), be, belong, own, possess</li>
+                    <li><strong>Sentidos:</strong> see, hear, smell, taste, sound</li>
+                </ul>
+                <p>❌ I am knowing the answer. ➔ ✅ I know the answer.</p>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 TRUCO RÁPIDO: La Prueba del "RIGHT NOW"</h4>
+                <p>Si puedes agregar "right now" (ahora mismo) a la oración y tiene sentido → usa CONTINUOUS</p>
+                <p>Si suena raro con "right now" → usa SIMPLE</p>
+                <ul>
+                    <li>✓ I'm eating (right now) → TIENE SENTIDO → Continuous</li>
+                    <li>✗ I eat pizza right now → SUENA MAL → Simple: "I eat pizza every week"</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PAST TENSES -->
+        <section id="past-tenses" class="grammar-section">
+            <h2>⏪ Past Tenses (Tiempos Pasados)</h2>
+            
+            <h3>🔴 PAST SIMPLE (Pasado Simple)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULAS</h4>
+                <div class="formula">✅ Afirmativo: Subject + Verb-ed (regular) / Irregular form</div>
+                <div class="formula">❌ Negativo: Subject + didn't + Verb (base)</div>
+                <div class="formula">❓ Pregunta: Did + Subject + Verb (base)?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "AYER"</h4>
+                <p><strong>A</strong>cciones completas (Actions completed)<br>
+                <strong>Y</strong>esterday / ago (Ayer / hace tiempo)<br>
+                <strong>E</strong>ventos pasados específicos (Specific past events)<br>
+                <strong>R</strong>epetición en pasado (Repeated actions in the past)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I visited Paris last year.</div>
+                    <div class="spanish">Visité París el año pasado. (Acción completa)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ She worked there from 2010 to 2015.</div>
+                    <div class="spanish">Ella trabajó ahí de 2010 a 2015. (Periodo terminado)</div>
+                </div>
+            </div>
+
+            <h3>🟡 PAST CONTINUOUS (Pasado Continuo)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULAS</h4>
+                <div class="formula">✅ Afirmativo: Subject + was/were + Verb-ing</div>
+                <div class="formula">❌ Negativo: Subject + was/were + not + Verb-ing</div>
+                <div class="formula">❓ Pregunta: Was/Were + Subject + Verb-ing?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "CUANDO"</h4>
+                <p><strong>C</strong>ontexto en el pasado (Background context)<br>
+                <strong>U</strong>na acción interrumpida (Interrupted action)<br>
+                <strong>A</strong>mbiente/escena (Setting the scene)<br>
+                <strong>N</strong>o terminada (Not completed at that moment)<br>
+                <strong>D</strong>os acciones simultáneas (Two actions at the same time)<br>
+                <strong>O</strong>curriendo en un momento específico (Happening at specific past time)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I was sleeping when you called.</div>
+                    <div class="spanish">Estaba durmiendo cuando llamaste. (Acción interrumpida)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ While I was cooking, she was studying.</div>
+                    <div class="spanish">Mientras yo cocinaba, ella estudiaba. (Acciones simultáneas)</div>
+                </div>
+            </div>
+
+            <h3>🟣 PAST PERFECT (Pasado Perfecto)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULAS</h4>
+                <div class="formula">✅ Afirmativo: Subject + had + Past Participle (Verb-ed / irregular)</div>
+                <div class="formula">❌ Negativo: Subject + had + not (hadn't) + Past Participle</div>
+                <div class="formula">❓ Pregunta: Had + Subject + Past Participle?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "ANTES"</h4>
+                <p><strong>A</strong>ntes de otra acción pasada (Before another past action)<br>
+                <strong>N</strong>arrativa del pasado (Past narrative)<br>
+                <strong>T</strong>iempo anterior (Earlier time)<br>
+                <strong>E</strong>vento previo (Previous event)<br>
+                <strong>S</strong>ecuencia clara (Clear sequence)</p>
+                <p><strong>REGLA DE ORO:</strong> "Pasado del pasado" - algo que ocurrió ANTES de otro evento pasado</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I had studied English before I moved to London.</div>
+                    <div class="spanish">Había estudiado inglés antes de mudarme a Londres. (1º estudié, 2º me mudé)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ When I arrived, the movie had already started.</div>
+                    <div class="spanish">Cuando llegué, la película ya había empezado. (1º empezó, 2º llegué)</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 TRUCO VISUAL: La Línea de Tiempo</h4>
+                <pre style="background: white; padding: 1rem; border-radius: 6px; overflow-x: auto;">
+PAST PERFECT ──────► PAST SIMPLE ──────► NOW
+   (antes)            (después)         (ahora)
+
+Ejemplo:
+   had studied    ►    moved       ►     live
+   (había           (me mudé)        (vivo)
+    estudiado)
+                </pre>
+            </div>
+
+            <h3>⚖️ COMPARACIÓN: ¿CUÁL USAR?</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Situación</th>
+                            <th>Tiempo a usar</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acción completa y terminada</td>
+                            <td>Past Simple</td>
+                            <td>I ate breakfast at 8am</td>
+                        </tr>
+                        <tr>
+                            <td>Acción en progreso (interrumpida)</td>
+                            <td>Past Continuous</td>
+                            <td>I was eating when he arrived</td>
+                        </tr>
+                        <tr>
+                            <td>Acción antes de otra acción pasada</td>
+                            <td>Past Perfect</td>
+                            <td>I had eaten before he arrived</td>
+                        </tr>
+                        <tr>
+                            <td>Escena/ambiente/contexto</td>
+                            <td>Past Continuous</td>
+                            <td>It was raining, birds were singing...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ ERROR COMÚN</h4>
+                <p><strong>NO uses Past Perfect si no hay otra acción pasada de referencia</strong></p>
+                <p>❌ I had visited Paris. (¿Antes de qué?)<br>
+                ✅ I visited Paris. (Si es solo un hecho pasado)<br>
+                ✅ I had visited Paris before I went to Rome. (Ahora sí tiene sentido)</p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FUTURE FORMS -->
+        <section id="future-forms" class="grammar-section">
+            <h2>🔮 Future Forms (Formas del Futuro)</h2>
+            
+            <p><strong>El inglés tiene 4 formas principales de expresar el futuro, cada una con un matiz diferente:</strong></p>
+
+            <h3>1️⃣ WILL (Futuro Simple)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">Subject + will + Verb (base)</div>
+                <div class="formula">Negativo: Subject + will not (won't) + Verb</div>
+                <div class="formula">Pregunta: Will + Subject + Verb?</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "PROME-DEC"</h4>
+                <p><strong>PROME</strong>sas (Promises)<br>
+                <strong>DEC</strong>isiones espontáneas (Spontaneous decisions)<br>
+                También: predicciones basadas en opinión, ofrecimientos</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I'll help you with that! (decisión en el momento)</div>
+                    <div class="spanish">¡Te ayudaré con eso!</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ I think it will rain tomorrow. (predicción/opinión)</div>
+                    <div class="spanish">Creo que lloverá mañana.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ I promise I'll call you. (promesa)</div>
+                    <div class="spanish">Prometo que te llamaré.</div>
+                </div>
+            </div>
+
+            <h3>2️⃣ GOING TO</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">Subject + am/is/are + going to + Verb (base)</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "PLAN-VEO"</h4>
+                <p><strong>PLAN</strong>es previos (Previous plans)<br>
+                <strong>VEO</strong> evidencia (Evidence I can see)<br>
+                Intenciones claras antes del momento de hablar</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I'm going to visit my parents next week. (plan ya decidido)</div>
+                    <div class="spanish">Voy a visitar a mis padres la próxima semana.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Look at those clouds! It's going to rain. (evidencia visual)</div>
+                    <div class="spanish">¡Mira esas nubes! Va a llover.</div>
+                </div>
+            </div>
+
+            <h3>3️⃣ PRESENT CONTINUOUS (for future)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">Subject + am/is/are + Verb-ing (+ time expression)</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: Planes CONFIRMADOS y ORGANIZADOS</h4>
+                <p>Se usa con: citas, reservaciones, horarios personales, planes con fecha/hora específica</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I'm meeting John at 5pm tomorrow. (cita confirmada)</div>
+                    <div class="spanish">Me reúno con John mañana a las 5pm.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ We're flying to Paris on Friday. (boletos comprados)</div>
+                    <div class="spanish">Volamos a París el viernes.</div>
+                </div>
+            </div>
+
+            <h3>4️⃣ PRESENT SIMPLE (for future)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">Subject + Verb (base/+s)</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: Horarios OFICIALES y FIJOS</h4>
+                <p>Se usa con: horarios de transporte, eventos programados, calendario oficial</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ The train leaves at 9am. (horario oficial)</div>
+                    <div class="spanish">El tren sale a las 9am.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ The movie starts at 7pm. (programa fijo)</div>
+                    <div class="spanish">La película empieza a las 7pm.</div>
+                </div>
+            </div>
+
+            <h3>⚖️ COMPARACIÓN: ¿Cuál usar?</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Situación</th>
+                            <th>Forma correcta</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Decisión espontánea (ahora)</td>
+                            <td>WILL</td>
+                            <td>The phone is ringing. I'll answer it!</td>
+                        </tr>
+                        <tr>
+                            <td>Plan ya decidido antes</td>
+                            <td>GOING TO</td>
+                            <td>I'm going to study medicine next year</td>
+                        </tr>
+                        <tr>
+                            <td>Cita/reservación confirmada</td>
+                            <td>PRESENT CONTINUOUS</td>
+                            <td>I'm seeing the doctor tomorrow at 3pm</td>
+                        </tr>
+                        <tr>
+                            <td>Horario oficial/público</td>
+                            <td>PRESENT SIMPLE</td>
+                            <td>The concert starts at 8pm</td>
+                        </tr>
+                        <tr>
+                            <td>Predicción con evidencia</td>
+                            <td>GOING TO</td>
+                            <td>She's going to fall! (la ves tambalearse)</td>
+                        </tr>
+                        <tr>
+                            <td>Predicción sin evidencia</td>
+                            <td>WILL</td>
+                            <td>I think he'll win the election</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 TRUCO: El Test de las 3 Preguntas</h4>
+                <ol>
+                    <li><strong>¿Lo acabo de decidir AHORA?</strong> → WILL</li>
+                    <li><strong>¿Ya lo tenía planeado ANTES?</strong> → GOING TO</li>
+                    <li><strong>¿Hay fecha/hora/confirmación?</strong> → PRESENT CONTINUOUS</li>
+                    <li><strong>¿Es horario oficial/público?</strong> → PRESENT SIMPLE</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CONDITIONALS -->
+        <section id="conditionals" class="grammar-section">
+            <h2>🔀 Conditionals (Condicionales)</h2>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA GENERAL: "0-1-2-3 = REAL → IRREAL"</h4>
+                <p>Mientras más alto el número, más IRREAL/IMPOSIBLE es la situación</p>
+            </div>
+
+            <h3>0️⃣ ZERO CONDITIONAL (Condicional Cero)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">If + Present Simple, Present Simple</div>
+                <div class="formula">Ejemplo: If you heat water, it boils</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: VERDADES UNIVERSALES / HECHOS CIENTÍFICOS</h4>
+                <p>Algo que SIEMPRE pasa. Puedes reemplazar "if" por "when"</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ If you heat ice, it melts.</div>
+                    <div class="spanish">Si calientas hielo, se derrite. (Siempre pasa)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ If I don't sleep, I get tired.</div>
+                    <div class="spanish">Si no duermo, me canso. (Hecho personal pero constante)</div>
+                </div>
+            </div>
+
+            <h3>1️⃣ FIRST CONDITIONAL (Primera Condicional)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">If + Present Simple, will + Verb</div>
+                <div class="formula">Ejemplo: If it rains, I will stay home</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: SITUACIONES REALES Y POSIBLES EN EL FUTURO</h4>
+                <p>Hay una buena posibilidad de que esto ocurra</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ If I study hard, I will pass the exam.</div>
+                    <div class="spanish">Si estudio mucho, aprobaré el examen. (Posible y probable)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ If you call me, I'll answer.</div>
+                    <div class="spanish">Si me llamas, contestaré. (Situación realista)</div>
+                </div>
+            </div>
+
+            <h3>2️⃣ SECOND CONDITIONAL (Segunda Condicional)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">If + Past Simple, would + Verb</div>
+                <div class="formula">Ejemplo: If I had money, I would travel</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: SITUACIONES HIPOTÉTICAS / IMPROBABLES / IMAGINARIAS</h4>
+                <p>Hablamos de cosas que NO son ciertas ahora o que son poco probables</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ If I were rich, I would buy a house. (pero no soy rico)</div>
+                    <div class="spanish">Si fuera rico, compraría una casa.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ If I had time, I would help you. (pero no tengo tiempo)</div>
+                    <div class="spanish">Si tuviera tiempo, te ayudaría.</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ NOTA ESPECIAL: "If I were" vs "If I was"</h4>
+                <p>En segunda condicional, se prefiere "were" para todas las personas:</p>
+                <p>✅ If I were you... (formal/correcto)<br>
+                ✅ If I was you... (informal/coloquial, también aceptado)<br>
+                <strong>Pero SIEMPRE usa "were" en contextos formales o escritos</strong></p>
+            </div>
+
+            <h3>3️⃣ THIRD CONDITIONAL (Tercera Condicional)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA</h4>
+                <div class="formula">If + Past Perfect, would have + Past Participle</div>
+                <div class="formula">Ejemplo: If I had studied, I would have passed</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 USO: SITUACIONES IMPOSIBLES EN EL PASADO (ARREPENTIMIENTOS)</h4>
+                <p>Hablamos de algo que NO pasó y ya es tarde para cambiarlo</p>
+                <p><strong>Mnemotecnia:</strong> "Lo que pudo haber sido pero ya no puede ser"</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ If I had studied, I would have passed the exam. (pero no estudié)</div>
+                    <div class="spanish">Si hubiera estudiado, habría aprobado el examen.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ If you had called me, I would have helped you. (pero no llamaste)</div>
+                    <div class="spanish">Si me hubieras llamado, te habría ayudado.</div>
+                </div>
+            </div>
+
+            <h3>📊 TABLA COMPARATIVA COMPLETA</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Fórmula</th>
+                            <th>Uso</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0</strong></td>
+                            <td>If + present, present</td>
+                            <td>Verdades universales</td>
+                            <td>If you heat water, it boils</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1</strong></td>
+                            <td>If + present, will</td>
+                            <td>Futuro real/posible</td>
+                            <td>If it rains, I'll stay home</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td>If + past, would</td>
+                            <td>Presente hipotético/irreal</td>
+                            <td>If I were rich, I'd travel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td>If + past perfect, would have</td>
+                            <td>Pasado imposible (arrepentimiento)</td>
+                            <td>If I had known, I'd have come</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 SUPER TRUCO: El "Test de Realidad"</h4>
+                <p><strong>Pregunta 1:</strong> ¿Es posible ahora o en el futuro? → <strong>PRIMERA</strong> (will)</p>
+                <p><strong>Pregunta 2:</strong> ¿Es irreal/improbable ahora? → <strong>SEGUNDA</strong> (would)</p>
+                <p><strong>Pregunta 3:</strong> ¿Ya pasó y no puedo cambiarlo? → <strong>TERCERA</strong> (would have)</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: MODAL VERBS -->
+        <section id="modal-verbs" class="grammar-section">
+            <h2>🎭 Modal Verbs (Verbos Modales)</h2>
+            
+            <div class="formula-box">
+                <h4>📐 CARACTERÍSTICAS COMUNES DE TODOS LOS MODALES</h4>
+                <div class="formula">✓ NUNCA cambian de forma (no hay -s, -ed, -ing)</div>
+                <div class="formula">✓ Después de ellos siempre va VERBO BASE (sin "to")</div>
+                <div class="formula">✓ Para negativo: modal + not</div>
+                <div class="formula">✓ Para pregunta: modal al inicio</div>
+            </div>
+
+            <h3>1️⃣ CAN / COULD (Poder / Capacidad / Permiso)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 MNEMOTECNIA: "CAP-PER"</h4>
+                <p><strong>CAP</strong>acidad (Ability)<br>
+                <strong>PER</strong>miso (Permission)<br>
+                <strong>POS</strong>ibilidad (Possibility)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I can swim. (capacidad)</div>
+                    <div class="spanish">Puedo/Sé nadar.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Can I use your phone? (permiso informal)</div>
+                    <div class="spanish">¿Puedo usar tu teléfono?</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Could you help me? (petición educada)</div>
+                    <div class="spanish">¿Podrías ayudarme?</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 CAN vs COULD</h4>
+                <ul>
+                    <li><strong>CAN</strong> → Presente, informal</li>
+                    <li><strong>COULD</strong> → Pasado, más formal/educado, menos probable</li>
+                </ul>
+            </div>
+
+            <h3>2️⃣ MUST / HAVE TO (Obligación / Necesidad)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 DIFERENCIA CLAVE:</h4>
+                <p><strong>MUST</strong> → Obligación INTERNA (yo lo siento necesario)</p>
+                <p><strong>HAVE TO</strong> → Obligación EXTERNA (regla, ley, otra persona)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I must study for the exam. (yo siento que debo)</div>
+                    <div class="spanish">Debo estudiar para el examen.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ I have to wear a uniform at work. (regla de la empresa)</div>
+                    <div class="spanish">Tengo que usar uniforme en el trabajo.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ You must not smoke here. (prohibición fuerte)</div>
+                    <div class="spanish">No debes fumar aquí.</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ IMPORTANTE: Negativo</h4>
+                <p><strong>MUST NOT (mustn't)</strong> = PROHIBICIÓN (¡No lo hagas!)</p>
+                <p><strong>DON'T HAVE TO</strong> = NO ES NECESARIO (pero puedes si quieres)</p>
+                <p>❌ You mustn't enter. = Está prohibido entrar.<br>
+                ✅ You don't have to come. = No es necesario que vengas (opcional).</p>
+            </div>
+
+            <h3>3️⃣ SHOULD / OUGHT TO (Consejo / Recomendación)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 USO: CONSEJOS y RECOMENDACIONES</h4>
+                <p>"Lo correcto", "lo que es mejor hacer", "lo recomendable"</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ You should see a doctor. (consejo)</div>
+                    <div class="spanish">Deberías ver a un doctor.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ We should arrive early. (recomendación)</div>
+                    <div class="spanish">Deberíamos llegar temprano.</div>
+                </div>
+            </div>
+
+            <h3>4️⃣ MAY / MIGHT (Posibilidad / Permiso formal)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 DIFERENCIA:</h4>
+                <p><strong>MAY</strong> → 50% posibilidad / permiso formal</p>
+                <p><strong>MIGHT</strong> → 30-40% posibilidad / menos probable que MAY</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ It may rain tomorrow. (50% probabilidad)</div>
+                    <div class="spanish">Puede que llueva mañana.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ I might go to the party. (menos seguro)</div>
+                    <div class="spanish">Quizás vaya a la fiesta.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ May I ask a question? (permiso muy formal)</div>
+                    <div class="spanish">¿Puedo hacer una pregunta?</div>
+                </div>
+            </div>
+
+            <h3>5️⃣ WILL / WOULD (Futuro / Peticiones / Hábitos)</h3>
+            
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I will help you. (futuro/promesa)</div>
+                    <div class="spanish">Te ayudaré.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Would you close the door? (petición educada)</div>
+                    <div class="spanish">¿Cerrarías la puerta?</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ When I was young, I would play outside. (hábito pasado)</div>
+                    <div class="spanish">Cuando era joven, solía jugar afuera.</div>
+                </div>
+            </div>
+
+            <h3>📊 ESCALA DE OBLIGACIÓN</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fuerza</th>
+                            <th>Modal</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>⚫⚫⚫ Muy fuerte</td>
+                            <td>MUST / HAVE TO</td>
+                            <td>Obligación (necesario)</td>
+                        </tr>
+                        <tr>
+                            <td>⚫⚫⚪ Recomendación</td>
+                            <td>SHOULD</td>
+                            <td>Consejo (lo correcto)</td>
+                        </tr>
+                        <tr>
+                            <td>⚫⚪⚪ Sugerencia</td>
+                            <td>COULD / MIGHT</td>
+                            <td>Posibilidad (opcional)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>📊 ESCALA DE PROBABILIDAD</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Probabilidad</th>
+                            <th>Modal</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100% Seguro</td>
+                            <td>WILL / MUST (deducción)</td>
+                            <td>He's not here, he must be at work</td>
+                        </tr>
+                        <tr>
+                            <td>70-80% Probable</td>
+                            <td>SHOULD</td>
+                            <td>The package should arrive tomorrow</td>
+                        </tr>
+                        <tr>
+                            <td>50-60% Posible</td>
+                            <td>MAY / COULD</td>
+                            <td>It may rain later</td>
+                        </tr>
+                        <tr>
+                            <td>30-40% Poco probable</td>
+                            <td>MIGHT</td>
+                            <td>I might see you there</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 6: PASSIVE VOICE -->
+        <section id="passive-voice" class="grammar-section">
+            <h2>🔄 Passive Voice (Voz Pasiva)</h2>
+            
+            <div class="formula-box">
+                <h4>📐 FÓRMULA UNIVERSAL</h4>
+                <div class="formula">Subject + BE (conjugado) + Past Participle (+ by + agent)</div>
+                <div class="formula">Activa: John writes the book</div>
+                <div class="formula">Pasiva: The book is written by John</div>
+            </div>
+
+            <div class="mnemonic-box">
+                <h4>🧠 CUÁNDO USAR PASIVA: "FOCO"</h4>
+                <p><strong>F</strong>oco en la ACCIÓN (no en quién la hace)<br>
+                <strong>O</strong>bvio/desconocido quién lo hizo<br>
+                <strong>C</strong>ontext científico/formal<br>
+                <strong>O</strong>cultar al responsable</p>
+            </div>
+
+            <h3>🔄 TRANSFORMACIÓN DE ACTIVA A PASIVA</h3>
+            
+            <div class="tip-box">
+                <h4>💡 PASO A PASO:</h4>
+                <ol>
+                    <li><strong>Identifica el objeto</strong> de la oración activa → será el nuevo SUJETO</li>
+                    <li><strong>Identifica el tiempo verbal</strong> → mantén el mismo tiempo con BE</li>
+                    <li><strong>Convierte el verbo</strong> a Past Participle</li>
+                    <li><strong>Agrega "by + agente"</strong> (opcional)</li>
+                </ol>
+            </div>
+
+            <h3>📊 PASIVA EN DIFERENTES TIEMPOS</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tiempo</th>
+                            <th>Activa</th>
+                            <th>Pasiva</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Present Simple</strong></td>
+                            <td>I write emails</td>
+                            <td>Emails are written (by me)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Present Continuous</strong></td>
+                            <td>I am writing an email</td>
+                            <td>An email is being written</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Past Simple</strong></td>
+                            <td>I wrote an email</td>
+                            <td>An email was written</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Past Continuous</strong></td>
+                            <td>I was writing an email</td>
+                            <td>An email was being written</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Present Perfect</strong></td>
+                            <td>I have written an email</td>
+                            <td>An email has been written</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Future Simple</strong></td>
+                            <td>I will write an email</td>
+                            <td>An email will be written</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modal</strong></td>
+                            <td>I can write an email</td>
+                            <td>An email can be written</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ The Mona Lisa was painted by Leonardo da Vinci. (foco en la obra)</div>
+                    <div class="spanish">La Mona Lisa fue pintada por Leonardo da Vinci.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ English is spoken in many countries. (no importa quién)</div>
+                    <div class="spanish">El inglés se habla en muchos países.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ The door has been closed. (no sabemos/importa quién)</div>
+                    <div class="spanish">La puerta ha sido cerrada.</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ NO USES PASIVA SI:</h4>
+                <ul>
+                    <li>El sujeto es importante para el mensaje</li>
+                    <li>Haces la oración más confusa</li>
+                    <li>Es una conversación informal</li>
+                </ul>
+                <p>❌ The book was read by me. (innecesariamente pasiva)<br>
+                ✅ I read the book. (más natural)</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: REPORTED SPEECH -->
+        <section id="reported-speech" class="grammar-section">
+            <h2>💬 Reported Speech (Discurso Indirecto)</h2>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 REGLA GENERAL: "UN PASO ATRÁS EN EL TIEMPO"</h4>
+                <p>Cuando reportamos algo que alguien dijo, los tiempos verbales retroceden:</p>
+            </div>
+
+            <h3>📊 CAMBIOS DE TIEMPOS VERBALES</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Directo (Direct Speech)</th>
+                            <th>Indirecto (Reported Speech)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Present Simple → "I work"</td>
+                            <td>Past Simple → He said he <strong>worked</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Present Continuous → "I'm working"</td>
+                            <td>Past Continuous → He said he <strong>was working</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Past Simple → "I worked"</td>
+                            <td>Past Perfect → He said he <strong>had worked</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Present Perfect → "I have worked"</td>
+                            <td>Past Perfect → He said he <strong>had worked</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Will → "I will work"</td>
+                            <td>Would → He said he <strong>would work</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Can → "I can work"</td>
+                            <td>Could → He said he <strong>could work</strong></td>
+                        </tr>
+                        <tr>
+                            <td>May → "I may work"</td>
+                            <td>Might → He said he <strong>might work</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>📍 CAMBIOS DE PRONOMBRES Y REFERENCIAS TEMPORALES</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Directo</th>
+                            <th>Indirecto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>today</td>
+                            <td>that day</td>
+                        </tr>
+                        <tr>
+                            <td>yesterday</td>
+                            <td>the day before / the previous day</td>
+                        </tr>
+                        <tr>
+                            <td>tomorrow</td>
+                            <td>the next day / the following day</td>
+                        </tr>
+                        <tr>
+                            <td>now</td>
+                            <td>then / at that moment</td>
+                        </tr>
+                        <tr>
+                            <td>here</td>
+                            <td>there</td>
+                        </tr>
+                        <tr>
+                            <td>this</td>
+                            <td>that</td>
+                        </tr>
+                        <tr>
+                            <td>these</td>
+                            <td>those</td>
+                        </tr>
+                        <tr>
+                            <td>ago</td>
+                            <td>before</td>
+                        </tr>
+                        <tr>
+                            <td>next week</td>
+                            <td>the following week</td>
+                        </tr>
+                        <tr>
+                            <td>last week</td>
+                            <td>the previous week</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>💬 REPORTANDO DIFERENTES TIPOS DE ORACIONES</h3>
+
+            <h4>1. Afirmaciones (Statements)</h4>
+            <div class="formula-box">
+                <div class="formula">say/tell + (that) + cambios de tiempo</div>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">Direct: "I am tired."</div>
+                    <div class="spanish">Reported: He said (that) he was tired.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">Direct: "I will come tomorrow."</div>
+                    <div class="spanish">Reported: She said (that) she would come the next day.</div>
+                </div>
+            </div>
+
+            <h4>2. Preguntas (Questions)</h4>
+            <div class="formula-box">
+                <div class="formula">ask + if/whether (Yes/No questions)</div>
+                <div class="formula">ask + question word (Wh- questions)</div>
+                <div class="formula">⚠️ ORDEN: Sujeto + verbo (NO pregunta)</div>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">Direct: "Are you tired?"</div>
+                    <div class="spanish">Reported: He asked if/whether I was tired.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">Direct: "Where do you live?"</div>
+                    <div class="spanish">Reported: She asked where I lived.</div>
+                </div>
+            </div>
+
+            <h4>3. Comandos/Órdenes (Commands)</h4>
+            <div class="formula-box">
+                <div class="formula">tell/ask + object + (not) to + verb</div>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">Direct: "Close the door!"</div>
+                    <div class="spanish">Reported: He told me to close the door.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">Direct: "Please help me."</div>
+                    <div class="spanish">Reported: She asked me to help her.</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 DIFERENCIA: SAY vs TELL</h4>
+                <p><strong>SAY</strong> → No requiere objeto directo (a quién)<br>
+                He said (that) he was tired.</p>
+                <p><strong>TELL</strong> → Requiere objeto directo (a quién)<br>
+                He told me (that) he was tired.</p>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ NO CAMBIES EL TIEMPO SI:</h4>
+                <ul>
+                    <li>La información sigue siendo verdadera (verdad universal)</li>
+                    <li>Acabas de escucharlo (hace segundos)</li>
+                    <li>Es una verdad científica</li>
+                </ul>
+                <p>✅ He said the Earth is round. (verdad universal, no cambies a "was")</p>
+            </div>
+        </section>
+
+        <!-- SECTION 8: PHRASAL VERBS -->
+        <section id="phrasal-verbs" class="grammar-section">
+            <h2>🚀 Phrasal Verbs</h2>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 ¿QUÉ SON?</h4>
+                <p>Verbo + Preposición/Adverbio = Nuevo significado (a veces muy diferente)</p>
+                <p><strong>Ejemplo:</strong> "give" (dar) + "up" = "give up" (rendirse) ❌ NO es "dar arriba"</p>
+            </div>
+
+            <h3>📚 PHRASAL VERBS MÁS COMUNES (Por Categoría)</h3>
+
+            <h4>🏃 MOVIMIENTO</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>get up</strong> - levantarse</div>
+                    <div class="spanish">I get up at 7am every day.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>go out</strong> - salir (de fiesta/cita)</div>
+                    <div class="spanish">Let's go out tonight!</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>come back</strong> - regresar</div>
+                    <div class="spanish">When will you come back?</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>run away</strong> - huir, escapar</div>
+                    <div class="spanish">The dog ran away from home.</div>
+                </div>
+            </div>
+
+            <h4>🔌 TECNOLOGÍA/APARATOS</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>turn on</strong> - encender</div>
+                    <div class="spanish">Turn on the TV, please.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>turn off</strong> - apagar</div>
+                    <div class="spanish">Don't forget to turn off the lights.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>plug in</strong> - enchufar</div>
+                    <div class="spanish">Plug in your phone to charge it.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>log in/out</strong> - iniciar/cerrar sesión</div>
+                    <div class="spanish">I can't log in to my account.</div>
+                </div>
+            </div>
+
+            <h4>💔 RELACIONES</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>break up</strong> - terminar (relación)</div>
+                    <div class="spanish">They broke up last month.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>get along</strong> - llevarse bien</div>
+                    <div class="spanish">I get along well with my boss.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>ask out</strong> - invitar a salir</div>
+                    <div class="spanish">He finally asked her out!</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>make up</strong> - reconciliarse</div>
+                    <div class="spanish">They had a fight but made up.</div>
+                </div>
+            </div>
+
+            <h4>📖 ESTUDIO/TRABAJO</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>look up</strong> - buscar (en diccionario/internet)</div>
+                    <div class="spanish">Look up the word in the dictionary.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>hand in</strong> - entregar (tarea)</div>
+                    <div class="spanish">Hand in your homework by Friday.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>figure out</strong> - resolver, entender</div>
+                    <div class="spanish">I can't figure out this problem.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>give up</strong> - rendirse</div>
+                    <div class="spanish">Don't give up! Keep trying!</div>
+                </div>
+            </div>
+
+            <h4>💬 COMUNICACIÓN</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>speak up</strong> - hablar más fuerte</div>
+                    <div class="spanish">Please speak up, I can't hear you.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>bring up</strong> - mencionar un tema</div>
+                    <div class="spanish">Don't bring up politics at dinner.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>call off</strong> - cancelar</div>
+                    <div class="spanish">They called off the meeting.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>put off</strong> - posponer</div>
+                    <div class="spanish">Let's put off the trip until next month.</div>
+                </div>
+            </div>
+
+            <h3>⚖️ TIPOS: SEPARABLES vs INSEPARABLES</h3>
+
+            <div class="tip-box">
+                <h4>💡 PHRASAL VERBS SEPARABLES</h4>
+                <p>Puedes poner el objeto ENTRE el verbo y la partícula:</p>
+                <p>✅ Turn on <strong>the TV</strong> / Turn <strong>the TV</strong> on (ambos correctos)</p>
+                <p>⚠️ Con pronombres, DEBES separar:</p>
+                <p>✅ Turn <strong>it</strong> on<br>
+                ❌ Turn on it</p>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ PHRASAL VERBS INSEPARABLES</h4>
+                <p>NO puedes separar el verbo de la partícula:</p>
+                <p>✅ Look after <strong>the children</strong><br>
+                ❌ Look the children after</p>
+                <p>✅ Look after <strong>them</strong><br>
+                ❌ Look them after</p>
+            </div>
+
+            <h3>🧠 MNEMOTECNIA: Partículas Comunes y Sus Significados</h3>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Partícula</th>
+                            <th>Significado General</th>
+                            <th>Ejemplos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>UP</strong></td>
+                            <td>Completar, aumentar, subir</td>
+                            <td>give up, wake up, speak up</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DOWN</strong></td>
+                            <td>Bajar, reducir, escribir</td>
+                            <td>calm down, write down, break down</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ON</strong></td>
+                            <td>Continuar, activar</td>
+                            <td>go on, turn on, put on</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OFF</strong></td>
+                            <td>Desactivar, partir, cancelar</td>
+                            <td>turn off, take off, call off</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OUT</strong></td>
+                            <td>Salir, extinguir, distribuir</td>
+                            <td>go out, figure out, work out</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BACK</strong></td>
+                            <td>Regresar, devolver</td>
+                            <td>come back, give back, call back</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AWAY</strong></td>
+                            <td>Distancia, eliminar</td>
+                            <td>go away, throw away, run away</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 9: ARTICLES -->
+        <section id="articles" class="grammar-section">
+            <h2>📰 Articles: A, AN, THE (Artículos)</h2>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 REGLA GENERAL</h4>
+                <p><strong>A/AN</strong> → Indefinido (cualquier cosa de ese tipo)<br>
+                <strong>THE</strong> → Definido (una cosa específica)<br>
+                <strong>Ø (nada)</strong> → General/plural/incontables</p>
+            </div>
+
+            <h3>1️⃣ A vs AN (Artículo Indefinido)</h3>
+            
+            <div class="formula-box">
+                <h4>📐 REGLA</h4>
+                <div class="formula"><strong>A</strong> + consonante (sonido)</div>
+                <div class="formula"><strong>AN</strong> + vocal (sonido)</div>
+                <div class="formula">⚠️ Importante: Se basa en el SONIDO, no la letra</div>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✅ <strong>a</strong> book, <strong>a</strong> car, <strong>a</strong> university (suena "yu")</div>
+                    <div class="spanish">un libro, un carro, una universidad</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✅ <strong>an</strong> apple, <strong>an</strong> hour (h muda), <strong>an</strong> honest person</div>
+                    <div class="spanish">una manzana, una hora, una persona honesta</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 TRUCO: Pronuncia en voz alta</h4>
+                <p>Si el sonido inicial es vocal → AN<br>
+                Si el sonido inicial es consonante → A</p>
+                <p>Ejemplos raros:<br>
+                ✅ an <strong>h</strong>our (suena "auer")<br>
+                ✅ a <strong>u</strong>niversity (suena "yuniversity")<br>
+                ✅ an <strong>M</strong>BA (suena "em-bi-ei")</p>
+            </div>
+
+            <h3>2️⃣ THE (Artículo Definido)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 USA "THE" CUANDO: "E-S-U-N-O"</h4>
+                <p><strong>E</strong>specífico y único (the sun, the moon, the president)<br>
+                <strong>S</strong>egunda mención (ya se mencionó antes)<br>
+                <strong>U</strong>no de un grupo específico (the tallest building)<br>
+                <strong>N</strong>ombres de ríos, océanos, cadenas montañosas<br>
+                <strong>O</strong>bvio en contexto (the door - la puerta de esta habitación)</p>
+            </div>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ I saw <strong>a</strong> dog. <strong>The</strong> dog was cute.</div>
+                    <div class="spanish">Vi un perro. El perro era lindo. (2ª mención)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ Can you close <strong>the</strong> door?</div>
+                    <div class="spanish">¿Puedes cerrar la puerta? (obvio cuál)</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>The</strong> sun rises in the east.</div>
+                    <div class="spanish">El sol sale por el este. (único)</div>
+                </div>
+            </div>
+
+            <h3>3️⃣ Ø (SIN ARTÍCULO)</h3>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 NO USES ARTÍCULO CON:</h4>
+                <ul>
+                    <li>Plurales generales: <strong>Ø</strong> Dogs are animals</li>
+                    <li>Incontables generales: <strong>Ø</strong> Water is essential</li>
+                    <li>Nombres propios: <strong>Ø</strong> John, <strong>Ø</strong> Mexico</li>
+                    <li>Deportes/comidas: play <strong>Ø</strong> football, have <strong>Ø</strong> breakfast</li>
+                    <li>Lenguas: speak <strong>Ø</strong> English</li>
+                </ul>
+            </div>
+
+            <h3>📊 TABLA COMPARATIVA COMPLETA</h3>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Situación</th>
+                            <th>Artículo</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primera mención (general)</td>
+                            <td>A/AN</td>
+                            <td>I need <strong>a</strong> pen</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda mención (específico)</td>
+                            <td>THE</td>
+                            <td>Where is <strong>the</strong> pen?</td>
+                        </tr>
+                        <tr>
+                            <td>Único en el mundo</td>
+                            <td>THE</td>
+                            <td><strong>the</strong> Earth, <strong>the</strong> moon</td>
+                        </tr>
+                        <tr>
+                            <td>Plural general</td>
+                            <td>Ø</td>
+                            <td><strong>Ø</strong> Dogs are friendly</td>
+                        </tr>
+                        <tr>
+                            <td>Incontable general</td>
+                            <td>Ø</td>
+                            <td>I love <strong>Ø</strong> music</td>
+                        </tr>
+                        <tr>
+                            <td>Superlativos</td>
+                            <td>THE</td>
+                            <td><strong>the</strong> best, <strong>the</strong> biggest</td>
+                        </tr>
+                        <tr>
+                            <td>Instrumentos musicales</td>
+                            <td>THE</td>
+                            <td>play <strong>the</strong> piano</td>
+                        </tr>
+                        <tr>
+                            <td>Deportes</td>
+                            <td>Ø</td>
+                            <td>play <strong>Ø</strong> soccer</td>
+                        </tr>
+                        <tr>
+                            <td>Comidas del día</td>
+                            <td>Ø</td>
+                            <td>have <strong>Ø</strong> lunch</td>
+                        </tr>
+                        <tr>
+                            <td>Países (singular)</td>
+                            <td>Ø</td>
+                            <td><strong>Ø</strong> Mexico, <strong>Ø</strong> Spain</td>
+                        </tr>
+                        <tr>
+                            <td>Países (plural/especiales)</td>
+                            <td>THE</td>
+                            <td><strong>the</strong> United States, <strong>the</strong> Netherlands</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ ERRORES COMUNES</h4>
+                <p>❌ I play the soccer → ✅ I play soccer<br>
+                ❌ The life is beautiful → ✅ Life is beautiful (general)<br>
+                ❌ She is teacher → ✅ She is <strong>a</strong> teacher (profesión necesita artículo)<br>
+                ❌ I went to United States → ✅ I went to <strong>the</strong> United States</p>
+            </div>
+        </section>
+
+        <!-- SECTION 10: PREPOSITIONS -->
+        <section id="prepositions" class="grammar-section">
+            <h2>🎯 Prepositions (Preposiciones)</h2>
+            
+            <div class="mnemonic-box">
+                <h4>🧠 TIPOS PRINCIPALES</h4>
+                <p><strong>TIEMPO</strong> → at, on, in<br>
+                <strong>LUGAR</strong> → at, on, in, under, over, between...<br>
+                <strong>MOVIMIENTO</strong> → to, from, into, out of...<br>
+                <strong>OTRAS</strong> → with, without, about, for...</p>
+            </div>
+
+            <h3>🕐 PREPOSICIONES DE TIEMPO</h3>
+
+            <h4>AT (punto específico en el tiempo)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>at</strong> 5 o'clock, <strong>at</strong> midnight, <strong>at</strong> noon</div>
+                    <div class="spanish">a las 5, a medianoche, al mediodía</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>at</strong> Christmas, <strong>at</strong> night, <strong>at</strong> the weekend</div>
+                    <div class="spanish">en Navidad, en la noche, el fin de semana</div>
+                </div>
+            </div>
+
+            <h4>ON (días y fechas)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>on</strong> Monday, <strong>on</strong> weekends, <strong>on</strong> my birthday</div>
+                    <div class="spanish">el lunes, los fines de semana, en mi cumpleaños</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>on</strong> June 15th, <strong>on</strong> New Year's Day</div>
+                    <div class="spanish">el 15 de junio, el Año Nuevo</div>
+                </div>
+            </div>
+
+            <h4>IN (periodos largos)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>in</strong> 2024, <strong>in</strong> June, <strong>in</strong> summer</div>
+                    <div class="spanish">en 2024, en junio, en verano</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>in</strong> the morning, <strong>in</strong> the afternoon, <strong>in</strong> the 21st century</div>
+                    <div class="spanish">en la mañana, en la tarde, en el siglo 21</div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 TRUCO: "Tamaño del Tiempo"</h4>
+                <p><strong>AT</strong> → punto pequeño (hora exacta)<br>
+                <strong>ON</strong> → superficie (día específico)<br>
+                <strong>IN</strong> → espacio grande (mes, año, siglo)</p>
+            </div>
+
+            <h3>📍 PREPOSICIONES DE LUGAR</h3>
+
+            <h4>AT (punto/lugar específico)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>at</strong> home, <strong>at</strong> school, <strong>at</strong> the station</div>
+                    <div class="spanish">en casa, en la escuela, en la estación</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>at</strong> the door, <strong>at</strong> the bus stop</div>
+                    <div class="spanish">en la puerta, en la parada del autobús</div>
+                </div>
+            </div>
+
+            <h4>ON (superficie/contacto)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>on</strong> the table, <strong>on</strong> the wall, <strong>on</strong> the floor</div>
+                    <div class="spanish">en/sobre la mesa, en la pared, en el piso</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>on</strong> the bus, <strong>on</strong> the train (transporte público)</div>
+                    <div class="spanish">en el autobús, en el tren</div>
+                </div>
+            </div>
+
+            <h4>IN (dentro de/espacio cerrado)</h4>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english">✓ <strong>in</strong> the room, <strong>in</strong> the box, <strong>in</strong> my pocket</div>
+                    <div class="spanish">en el cuarto, en la caja, en mi bolsillo</div>
+                </div>
+                <div class="example-item">
+                    <div class="english">✓ <strong>in</strong> London, <strong>in</strong> the USA, <strong>in</strong> the car</div>
+                    <div class="spanish">en Londres, en USA, en el carro</div>
+                </div>
+            </div>
+
+            <h3>📊 PREPOSICIONES DE LUGAR (Visuales)</h3>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Preposición</th>
+                            <th>Significado</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>above</strong></td>
+                            <td>por encima de (sin tocar)</td>
+                            <td>The lamp is above the table</td>
+                        </tr>
+                        <tr>
+                            <td><strong>below</strong></td>
+                            <td>por debajo de (sin tocar)</td>
+                            <td>The valley is below the mountain</td>
+                        </tr>
+                        <tr>
+                            <td><strong>over</strong></td>
+                            <td>sobre, por encima (cubriendo)</td>
+                            <td>The blanket is over the bed</td>
+                        </tr>
+                        <tr>
+                            <td><strong>under</strong></td>
+                            <td>debajo de</td>
+                            <td>The cat is under the table</td>
+                        </tr>
+                        <tr>
+                            <td><strong>between</strong></td>
+                            <td>entre (dos cosas)</td>
+                            <td>I sit between John and Mary</td>
+                        </tr>
+                        <tr>
+                            <td><strong>among</strong></td>
+                            <td>entre (más de dos)</td>
+                            <td>He is among friends</td>
+                        </tr>
+                        <tr>
+                            <td><strong>behind</strong></td>
+                            <td>detrás de</td>
+                            <td>The car is behind the house</td>
+                        </tr>
+                        <tr>
+                            <td><strong>in front of</strong></td>
+                            <td>enfrente de</td>
+                            <td>I'm standing in front of you</td>
+                        </tr>
+                        <tr>
+                            <td><strong>next to</strong></td>
+                            <td>al lado de</td>
+                            <td>The bank is next to the store</td>
+                        </tr>
+                        <tr>
+                            <td><strong>opposite</strong></td>
+                            <td>frente a, opuesto</td>
+                            <td>The park is opposite the school</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>🚶 PREPOSICIONES DE MOVIMIENTO</h3>
+
+            <div class="examples-grid">
+                <div class="example-item">
+                    <div class="english"><strong>to</strong> - hacia (destino)</div>
+                    <div class="spanish">I'm going <strong>to</strong> school.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>from</strong> - desde (origen)</div>
+                    <div class="spanish">I'm from <strong>Mexico</strong>.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>into</strong> - hacia dentro</div>
+                    <div class="spanish">Come <strong>into</strong> the house.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>out of</strong> - hacia fuera</div>
+                    <div class="spanish">Get <strong>out of</strong> the car.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>through</strong> - a través de</div>
+                    <div class="spanish">Walk <strong>through</strong> the park.</div>
+                </div>
+                <div class="example-item">
+                    <div class="english"><strong>across</strong> - cruzar</div>
+                    <div class="spanish">Walk <strong>across</strong> the street.</div>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <h4>⚠️ ERRORES COMUNES</h4>
+                <p>❌ I'm going to home → ✅ I'm going home (sin "to")<br>
+                ❌ in the morning of Monday → ✅ <strong>on</strong> Monday morning<br>
+                ❌ arrive to London → ✅ arrive <strong>in</strong> London<br>
+                ❌ in Monday → ✅ <strong>on</strong> Monday<br>
+                ❌ at summer → ✅ <strong>in</strong> summer</p>
+            </div>
+
+            <div class="tip-box">
+                <h4>💡 COMBINACIONES FIJAS (Memorizar)</h4>
+                <ul>
+                    <li><strong>arrive at</strong> (lugar pequeño): arrive at the station</li>
+                    <li><strong>arrive in</strong> (ciudad/país): arrive in Paris</li>
+                    <li><strong>good at</strong>: I'm good at math</li>
+                    <li><strong>interested in</strong>: interested in music</li>
+                    <li><strong>afraid of</strong>: afraid of spiders</li>
+                    <li><strong>depend on</strong>: It depends on you</li>
+                    <li><strong>listen to</strong>: listen to music</li>
+                    <li><strong>wait for</strong>: wait for the bus</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Back to top button -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="#" style="padding: 1rem 2rem; background: #667eea; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                ⬆️ Volver Arriba
+            </a>
+        </div>
+
+        <footer style="text-align: center; padding: 2rem; color: #666; border-top: 2px solid #e0e0e0; margin-top: 3rem;">
+            <p><strong>💡 Tip Final:</strong> No intentes memorizar todo de una vez. Estudia una sección por día y practica con ejemplos reales.</p>
+            <p style="margin-top: 1rem;">© 2024 Gaell English Academy - Guía de Gramática Completa</p>
+        </footer>
+    </div>
+</body>
+</html>
